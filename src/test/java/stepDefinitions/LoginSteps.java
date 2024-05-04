@@ -1,40 +1,22 @@
 package stepDefinitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
 
+import static driver.DriverFactory.getDriver;
+
 public class LoginSteps {
-    private WebDriver driver;
-
-    @Before("@login")
-    public void setup() {
-        WebDriverManager.chromedriver().setup();
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-        driver = new ChromeDriver(chromeOptions);
-        driver.manage().window().maximize();
-    }
-
-    @After("@login")
-    public void tearDown() {
-        driver.quit();
-    }
+    private WebDriver driver = getDriver();
 
     @Given("I access the E-commerce Website login page")
     public void i_access_the_e_commerce_website_login_page() {
