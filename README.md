@@ -1,6 +1,6 @@
-# UI Testing using Selenium WebDriver and Cucumber
+# E2E Testing using Selenium WebDriver and Cucumber
 
-Automated UI tests of an e-commerce application built using **Selenium WebDriver** with **Java** and **Cucumber**.
+Automated end-to-end tests of an e-commerce application built using **Selenium WebDriver** with **Java** and **Cucumber**.
 
 ## Table of Contents
 
