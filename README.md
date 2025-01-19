@@ -2,6 +2,15 @@
 
 Automated end-to-end tests of an e-commerce application built using **Selenium WebDriver** with **Java** and **Cucumber**.
 
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [System Under Test (SUT)](#system-under-test-sut)
+- [Download the project](#download-the-project)
+- [Installation](#installation)
+- [Run tests](#run-tests)
+- [Open the Cucumber report](#open-the-cucumber-report)
+
 ## Prerequisites
 
 Install the following prerequisites:
